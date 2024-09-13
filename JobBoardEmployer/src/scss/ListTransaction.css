@@ -1,0 +1,24 @@
+/* ListTransaction.css */
+.list-transaction-container {
+  margin-top: 20px;
+}
+
+.transaction-card {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.transaction-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.transaction-header {
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+}
+
+.transaction-body p {
+  margin-bottom: 0.5rem;
+}

@@ -1,0 +1,311 @@
+
+/* main.css or a relevant CSS file */
+.new-jobs-badge {
+  background-color: #ff0000;
+  color: #fff;
+  border-radius: 50%;
+  padding: 0.5em 1em;
+  font-size: 0.75em;
+  margin-left: 0.5em;
+}
+
+.main-cv-container {
+  display: flex;
+  max-width: 1200px;
+  min-height: 80vh;
+  margin: auto;
+  padding-bottom: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background: linear-gradient(
+    to right, /* direction of the gradient */
+    rgba(0, 0, 0, 0.5) 0%, /* starting color */
+    rgba(25, 25, 25, 0.5) 50%, /* intermediate color */
+    rgba(201, 201, 201, 0.5) 70%, /* intermediate color */
+    rgba(182, 182, 182, 0.5) 100% /* ending color */
+  );
+}
+
+  
+  .actions-container {
+    width: 20%;
+    padding: 20px;
+    border-right: 1px solid #ffffff;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .actions-container h2 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px #89ba16b8;
+    font-weight: bolder;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  .action-item  {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  .global-action-item{
+    margin-bottom: 20px;
+    font-size: 1.2rem !important;
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  .action-item, .global-action-item {
+    padding: 8px 16px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    font-size: 18px;  /* Reduced font size */
+  }
+  
+  .action-item i, .global-action-item i {
+    margin-right: 8px;
+    font-size: 15px;  /* Reduced icon size */
+  }
+  
+  .action-item:hover, .global-action-item:hover {
+    background-color: #f0f0f0;
+    color: #89ba16b8;
+  }
+  
+  .action-item.active {
+    border-bottom:#89ba16b8 2px solid;
+    color: white;
+  }
+  
+  .display-area {
+    width: 80%;
+    padding: 20px;
+  }
+  
+  .default-info, .delete-confirmation {
+    text-align: center;
+  }
+  
+  .default-img {
+    max-width: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  
+  .confirm-btn, .cancel-btn {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+
+  
+
+  .default-info {
+    border: 2px solid white;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url('../../../assets/images/management.avif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10%;
+  }
+  
+  .welcome-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.328);
+    border-radius: 10%;
+  }
+  .userName{
+    font-size: larger;
+    color: #89ba16;
+  text-shadow: 2px 2px 2px rgba(43, 43, 43, 0.953) !important;
+
+  }
+  .green-text {
+    color: #89ba16;
+  }
+  .welcome {
+    color: white;
+    font-weight: bolder;
+    font-size: 2rem;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .fade-in {
+    animation: fadeIn 2s ease-out forwards;
+  }
+  @media (max-width: 768px) {
+    .main-cv-container {
+      flex-direction: column;
+    }
+  
+    .actions-container, .display-area {
+      width: 100%;
+    }
+  
+    .actions-container {
+      border-right: none;
+      border-bottom: 1px solid #ddd;
+      margin-bottom: 20px;
+    }
+  
+    .welcome {
+      font-size: 1rem;
+    }
+  }
+  .main-cv-wrapper {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('../../../assets/images/management2.avif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  .notification {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    text-align: center;
+  }
+  
+  .notification.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+  }
+  
+  .notification.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+  }
+ .render-css{
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #0097c1;
+ }
+ .render-css:hover{
+  text-decoration: underline;
+  background-color: #dddddd9a;
+ }
+  
+ .delete-confirmation {
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.delete-confirmation h2 {
+  font-weight: bolder;
+  color: #343a40;
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.delete-confirmation p {
+  font-weight: bolder;
+  color: #495057;
+  font-size: 16px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.question-form {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.question-form input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.confirm-btn, .cancel-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bolder;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.confirm-btn {
+  background-color: rgb(255, 42, 42);
+  color: white;
+  margin-right: 10px;
+}
+.fa-exclamation-triangle{
+  color: rgb(255, 42, 42);
+}
+.confirm-btn:hover {
+  background-color: #b30000d9;
+}
+
+.cancel-btn {
+  background-color: #6c757d;
+  color: white;
+}
+
+.cancel-btn:hover {
+  background-color: #545b62;
+}
+
+.notification {
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.notification.success {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.notification.error {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}

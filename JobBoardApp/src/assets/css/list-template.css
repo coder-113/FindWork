@@ -1,0 +1,214 @@
+ /* Sort Buttons */
+.sort-buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 1rem;
+  }
+  
+  .sort-buttons .btn {
+    margin-left: 0.5rem;
+  }
+  
+  .sort-buttons .btn.active {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+/* Template Section */
+.template-section {
+    padding: 80px 0;
+    padding: 2rem;
+ 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+     background-image: url('../images/bg-form7.avif');
+  }
+  .border-css {
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #d1d1d185;
+    border-left: solid #888c8f85 1px;
+    border-right: solid #888c8f85 1px;
+  }
+  
+  .template-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+    position: relative;
+    padding: 20px;
+}
+
+.template-card:hover {
+  cursor: pointer;
+  transform: translateY(-5px);
+    box-shadow: 0 4px 12px #89ba16b8;
+}
+
+.template-image {
+  border-right: 3px solid #89ba16;
+  border-left: 3px solid #89ba16;
+  border-top: 2px solid #89ba16;
+  border-bottom: 1px solid #89ba16;
+  border-radius: 20px 20px 20px 20px;
+  padding: 10px;
+    width: 100%;
+    height: auto;
+    object-fit: contain; /* Changed from cover to contain */
+    max-height: 300px;
+}
+
+.template-details {
+  padding: 20px;
+  border-left: 3px solid #89ba16;
+  border-right: 3px solid #89ba16;
+  border-bottom: 2px solid #89ba16;
+  border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.template-title {
+  color: #89ba16;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.template-date {
+    font-size: 12px;
+    color: #6c757d;
+}
+
+.placeholder-image {
+    width: 100%;
+    height: 200px;
+    background-color: #e9ecef;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #6c757d;
+    font-size: 16px;
+}
+
+  /* Filter Toggle */
+.filter-toggle {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 15px;
+  background-color: #89ba16;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.filter-toggle:hover {
+  background-color: #89ba16e1;
+}
+
+.filter-icon {
+  margin-right: 8px;
+}
+
+/* Filter Dropdown */
+.filter-dropdown {
+  margin-top: 10px;
+  padding: 15px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Sort Buttons */
+.sort-buttons button {
+  margin-right: 10px;
+  padding: 8px 15px;
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.sort-buttons button.active {
+  background-color: #89ba16b8;
+  color: #fff;
+}
+
+.sort-buttons button:hover {
+  background-color: #e0e0e0;
+}
+
+/* Search Bar */
+.search-bar {
+  margin-top: 15px;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.search-bar input:focus {
+  border-color: #89ba16b8;
+}
+
+/* Responsive Styles */
+@media (max-width: 767px) {
+  .filter-dropdown {
+    flex-direction: column;
+  }
+
+  .sort-buttons,
+  .search-bar {
+    margin-bottom: 10px;
+  }
+}
+.text-css {
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-shadow:  0 0 10px #89ba16, 0 0 20px #89ba16, 0 0 30px #101010, 0 0 40px #b8b8b8, 0 0 70px #fbfbfb;
+  font-size: 2rem;
+  font-weight:bolder;
+}
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.page-number{
+  color: #101010;
+  background-color: #89ba16;
+  border-radius: 5px;
+  padding: 10px 15px;
+}
+.page-link {
+  border: none;
+  background-color: #89ba16;
+  color: white;
+  padding: 10px 15px;
+  margin: 0 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.page-link:hover {
+  background-color: #76a014e3;
+  color: white;
+}
+
+.page-link.active {
+  background-color: #5f8d0e;
+}

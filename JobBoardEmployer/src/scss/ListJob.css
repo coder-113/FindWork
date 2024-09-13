@@ -1,0 +1,58 @@
+/* ListJob.css */
+
+.search-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  position: relative; /* Ensure the auto-complete suggestions are positioned correctly */
+}
+
+.job-title {
+  font-weight: bold;
+  color: #343a40;
+}
+
+.job-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.data-table {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.data-table-header {
+  background-color: #f8f9fa;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.data-table-row {
+  &:nth-of-type(even) {
+    background-color: #f2f2f2;
+  }
+}
+
+.auto-complete-suggestions {
+  position: absolute;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: white;
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 1000;
+  width: 100%; /* Match the width of the search input */
+  top: 100%; /* Position below the search input */
+}
+
+.auto-complete-suggestion {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.auto-complete-suggestion:hover {
+  background-color: #f2f2f2;
+}

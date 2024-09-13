@@ -1,0 +1,11 @@
+.disabled-button {
+  cursor: not-allowed;
+}
+
+.disabled-button:hover {
+  background-color: #d6d6d6; /* Optional: change background color when hovered */
+}
+
+.ck-editor__editable {
+  height: 400px;
+}

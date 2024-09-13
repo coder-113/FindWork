@@ -1,0 +1,175 @@
+.job-management {
+  font-family: Arial, sans-serif;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.applied-letter-css{
+  text-align: center;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bolder;
+  font-size: 2rem;
+  color: #ffffff !important;
+  padding: 10px;
+  text-shadow: 2px 2px #89ba16dc !important;
+}
+.applied-jobs-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.applied-job-item {
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.applied-job-item:hover {
+  background-color: #f0f0f0;
+}
+
+.job-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.company-logo {
+  width: 20%;
+  height: 20%;
+  border-radius: 4px;
+  margin-right: 12px;
+}
+
+.job-title {
+  color: #000000;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.company-name {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.job-details {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.detail-item {
+  font-size: 14px;
+  color: #444;
+}
+
+.job-tags {
+  display: flex;
+}
+
+.hr-css-job {
+  margin: 10px auto;
+  background-color: white;
+  border-top: 1px dashed rgb(164, 164, 164) !important;
+}
+
+.tag {
+  background-color: #89ba16b8 !important;
+  color: #000000 !important;
+  font-weight: bolder;
+  font-size: 12px;
+  padding: 10px 10px !important;
+  border-radius: 16px;
+}
+
+/* Add this to your job-management.css file */
+.custom-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.custom-pagination .page-item {
+  margin: 0 5px;
+}
+
+.custom-pagination .page-link {
+  display: block;
+  padding: 8px 12px;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  color: #89ba16;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.custom-pagination .page-item.disabled .page-link {
+  color: #6c757d;
+  pointer-events: none;
+  cursor: default;
+}
+
+.custom-pagination .page-link:hover:not(.disabled) {
+  background-color: #e9ecef;
+  border-color: #dee2e6;
+  color: #89ba16;
+}
+
+.custom-pagination .current .page-link {
+  background-color: #89ba16;
+  border-color: #89ba16;
+  color: #fff;
+}
+
+.custom-pagination .prev,
+.custom-pagination .next {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 30px;
+  padding: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+
+.custom-pagination .prev:hover,
+.custom-pagination .next:hover {
+  background-color: #e9ecef;
+  border-color: #dee2e6;
+}
+
+.custom-pagination .disabled {
+  color: #6c757d;
+  pointer-events: none;
+  cursor: default;
+}
+.job-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.job-status-tag {
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  color: white;
+}
+
+.approved {
+  background-color: green;
+}
+
+.not-approved {
+  background-color: rgb(130, 130, 130);
+}
+

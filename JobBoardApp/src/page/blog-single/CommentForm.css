@@ -1,0 +1,33 @@
+/* CommentForm.css */
+.comment-form {
+  position: relative;
+  border-radius: 10px;
+}
+
+.comment-form .form-group {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.comment-form textarea {
+  flex: 1;
+  resize: none;
+  padding-right: 50px; /* Adjust this value if needed */
+}
+
+.comment-form .post-button {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #89ba16;
+  font-size: 1.5em;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+}

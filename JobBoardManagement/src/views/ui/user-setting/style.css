@@ -1,0 +1,45 @@
+.text-truncate-multiline {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4 !important; /* Số lượng dòng bạn muốn hiển thị */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+}
+
+.avatar-container {
+  position: relative;
+  display: inline-block;
+}
+
+.avatar-container img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.avatar-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.upload-button {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+}
+
+.upload-button i {
+  font-size: 20px;
+}

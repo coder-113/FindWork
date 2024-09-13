@@ -1,0 +1,108 @@
+/* Contact.css */
+
+/* Section Hero */
+.section-hero {
+  padding: 100px 0;
+  background-size: cover;
+  background-position: center center;
+}
+
+.section-hero h1 {
+  font-size: 3rem;
+}
+
+.custom-breadcrumbs {
+  font-size: 0.9rem;
+}
+
+.custom-breadcrumbs a {
+  color: #ffffff;
+}
+
+.custom-breadcrumbs .slash {
+  color: #ffffff;
+}
+
+/* Contact Form */
+.contact-form {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form label {
+  font-weight: bold;
+}
+
+.contact-form .form-control {
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  padding: 8px 12px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.contact-form .form-control:focus {
+  border-color: #80bdff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.contact-form textarea {
+  resize: vertical; /* Allow vertical resizing of textarea */
+}
+
+.error-message {
+  color: #dc3545;
+  font-size: 0.875rem;
+  margin-top: 4px;
+}
+
+/* Buttons */
+
+.btn-primary:disabled {
+  background-color: #6c757d;
+  border-color: #6c757d;
+}
+
+/* Address Info */
+.bg-white {
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Testimonials */
+.block__87154 {
+  padding: 30px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.block__87154 blockquote {
+  font-style: italic;
+}
+
+.block__91147 img {
+  width: 60px;
+  border-radius: 50%;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .section-hero h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .section-hero h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .col-lg-5 {
+    margin-left: 0 !important;
+  }
+}

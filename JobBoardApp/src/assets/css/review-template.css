@@ -1,0 +1,342 @@
+.action-item-rv.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+.text-review-css{
+  color: #333;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bolder;
+ }
+.hr-review-css{
+  background-color: rgb(32, 32, 32);
+}
+.success-dialog-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(62, 62, 62, 0.647);
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.success-dialog {
+  position: relative;
+  color: green;
+  background-color: white;
+  padding: 50px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  text-align: center;
+}
+
+.success-dialog p,i {
+  margin: 10px 0;
+  font-size: 1rem;
+  font-weight: bolder;
+}
+
+
+/* Styling for the heading above the selector */
+.cv-selector-wrapper h4 {
+  font-size: 16px;
+  color: #ffffff;
+  margin-bottom: 10px;
+  font-weight: 600;
+  text-align: left;
+  padding: 8px 15px;
+  background: linear-gradient(45deg, #ff6b6b, #feca57);
+  border-radius: 20px;
+  display: inline-block;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.cv-selector-wrapper h4:hover {
+  background: linear-gradient(45deg, #ff9ff3, #54a0ff);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+.cv-selector-container {
+  width: 100%;
+  position: relative;
+}
+
+.cv-selector {
+  background: linear-gradient(45deg, #ff6b6b, #feca57);
+  width: 100%;
+  padding: 10px 35px 10px 15px;
+  font-size: 16px;
+  border: 1px solid #e0e0e0;
+  border-radius: 25px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: #ffffff;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cv-selector:focus {
+  outline: none;
+  border-color: #4a90e2;
+  box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.2);
+}
+
+.cv-selector:hover {
+  background: linear-gradient(45deg, #ff9ff3, #54a0ff);
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Custom dropdown arrow */
+.cv-selector-container::after {
+  content: '\25BC';
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  font-size: 12px;
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.cv-selector-container:hover::after {
+  margin-right: 5px;
+  font-size: 15px;
+  transition: transform 0.3s ease;
+}
+
+/* Style for options */
+.cv-selector option {
+  padding: 10px;
+}
+
+/* Ensure the selector takes the full width of its container */
+.action-item-rv.cv-selector-item {
+  padding: 0;
+  background: none;
+  cursor: default;
+  width: 100%;
+}
+
+.action-item-rv.cv-selector-item:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+/* Ensure the selector takes the full width of its container */
+.action-item-rv.cv-selector-item {
+  padding: 0;
+  background: none;
+  cursor: default;
+  width: 100%;
+}
+
+.action-item-rv.cv-selector-item:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+/* Actions container styles */
+.actions-container-rv {
+  text-align: center;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  height: 100%;
+}
+
+.actions-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.action-items-rv {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.action-item-rv {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  cursor: pointer;
+  font-size: 16px;
+  background: linear-gradient(45deg, #ff6b6b, #feca57);
+  padding: 12px 20px;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  color: #ffffff;
+  width: 100%;
+  justify-content: flex-start;
+}
+
+.action-item-rv:hover {
+  background: linear-gradient(45deg, #ff9ff3, #54a0ff);
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.action-item-rv .icon {
+  margin-right: 10px;
+  font-size: 24px;
+  transition: transform 0.3s ease;
+}
+
+.action-item-rv:hover .icon {
+  transform: scale(1.2);
+}
+
+.action-item-rv.cv-selector-item {
+  padding: 0;
+  background: none;
+  cursor: default;
+}
+
+.action-item-rv.cv-selector-item:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+/* Template preview styles */
+.template-preview {
+  margin-top: 0;
+  border-radius: 2%;
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
+  background-color: #f8f8f8;
+  padding: 20px;
+}
+
+.template-preview::-webkit-scrollbar {
+  width: 12px;
+}
+
+.template-preview::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+  border-radius: 6px;
+}
+
+.template-preview::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 6px;
+}
+
+.template-preview::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+/* Scroll to top button styles */
+.scroll-to-top {
+  background: linear-gradient(45deg, #5352ed, #3742fa);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  transition: all 0.3s ease;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.scroll-to-top.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.scroll-to-top:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .actions-container-rv {
+    margin-bottom: 20px;
+  }
+  
+  .template-preview {
+    height: 70vh;
+  }
+}
+/* ads css  */
+/* Container for the entire dialog */
+.dialog-overlay-ad {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000; /* Ensure the dialog is on top */
+}
+
+/* Dialog box styling */
+.dialog-box-ad{
+  background-color: white;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 8px; /* Optional: adds rounded corners */
+  width: 500px; /* Adjust as needed */
+  max-width: 90%; /* Responsive design */
+  text-align: center;
+}
+.dialog-box-ad p{
+  color:#f44336 ;
+  font-weight: bolder;
+  font-size: larger;
+}
+
+/* Button container for aligning buttons to the right */
+.button-container-ad {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px; /* Space between buttons */
+}
+
+/* Button styling */
+.button-ad {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button-watch-ad {
+  background-color: #4CAF50; /* Green background */
+  color: white;
+}
+.button-watch-ad:hover {
+  background-color: #4caf4fbb; /* Green background */
+  color: black;
+}
+.button-cancel-ad {
+  background-color: #f44336; /* Red background */
+  color: white;
+}
+.button-cancel-ad:hover {
+  background-color: #f44336ae; /* Red background */
+  color: black;
+}

@@ -1,0 +1,84 @@
+.pdf-list-container {
+  padding: 20px;
+  background-color: #f9f9f9; /* Light background color for better readability */
+  border-radius: 8px; /* Rounded corners for a modern look */
+  max-width: 800px; /* Center the container */
+  margin: 0 auto; /* Center the container */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+.pdf-item-content {
+  display: flex;
+  align-items: center;
+}
+
+.pdf-date {
+  font-size: 0.9rem;
+}
+.pdf-letter-css{
+  text-align: center;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bolder;
+  font-size: 2rem;
+  color: #89ba16b8 !important;
+  padding: 10px;
+  text-shadow: 1px 1px #000000b8 !important;
+}
+ 
+
+.pdf-list {
+  list-style-type: none; /* Remove default list style */
+  padding: 0; /* Remove default padding */
+}
+
+.pdf-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px; /* Space inside each item */
+  margin-bottom: 10px; /* Space between items */
+  background-color: #fff; /* White background for each item */
+  border-radius: 4px; /* Rounded corners for items */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for items */
+  cursor: pointer; /* Pointer cursor to indicate clickable items */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.pdf-item:hover {
+  background-color: #f1f1f1; /* Slightly darker background on hover */
+}
+
+.pdf-name {
+  font-size: 1.2rem;
+  font-weight: bolder; /* Bold text for file names */
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #555; /* Slightly darker color for file names */
+}
+.pdf-icon-css{
+  color: rgb(27, 153, 255) !important;
+  font-size: 1.5rem;
+}
+.filter-section {
+  margin-bottom: 20px;
+  text-align: right;
+}
+
+.sort-select {
+  padding: 8px 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #333;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.sort-select:hover {
+  border-color: #888;
+}
+
+.sort-select:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
